@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    </title>
+  </head>
+   <body>
+
+    <div class="container nav">
+      <div class="row">
+        <div class="col">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Veadlok</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Меню</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item"  href="menu.html">Горячие блюда</a>
+                <a class="dropdown-item"  href="menu.html">Холодные бюлда</a>
+                <a class="dropdown-item"  href="menu.html">Напитки</a>
+                <a class="dropdown-item"  href="menu.html">Десерты</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=" {{ url_for('order') }} ">Сделать заказ</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+      
+    <section class="main">
+    <h1>Ресторан Veadlok</h1>
+      <div class="container">
+            <div class="col-md-12">
+                <div class="text">
+                    Ресторан "Veadlok" вобрал в себя лучшие традиции европейской, испанской и средиземноморской кухни.   Уютная, доброжелательная атмосфера и достойный сервис  - это основные преимущества ресторана. <br><br>
+                    Все вышеперечисленное и плюс доступный уровень цен позволили заведению оказаться в списке лучших ресторанов  Москвы. Секрет популярности прост - побывав здесь однажды и ощутив радушие и гостеприимство, теплый прием и заботливое обслуживание, гости непременно возвращаются вновь и рекомендуют  "Veadlok" своим друзьям.
+                </div>
+            </div>
+          
+          </div>
+      </div>
+           
+
+    </section>
+      
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
