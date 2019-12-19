@@ -4,7 +4,7 @@ from flask import render_template
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html')
+    return render_template('/index.html')
 
 @app.route('/menu')
 def menu():
@@ -17,3 +17,8 @@ def doorder():
 @app.route('/order')
 def order():
     return render_template('/order.html')
+
+
+
+
+

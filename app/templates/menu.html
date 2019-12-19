@@ -3,14 +3,168 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,70.." rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
     <title>Menu</title>
   </head>
   <body>
 
+    <secion class="menu_nav"> 
+      <div class="container nav">
+        <div class="row">
+          <div class="col">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href='{{ url_for('index') }}'>Veadlok</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Меню</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item"  href='{{ url_for('menu') }}'>Первые блюда</a>
+                  <a class="dropdown-item"  href='{{ url_for('menu') }}'>Вторые блюда</a>
+                  <a class="dropdown-item"  href='{{ url_for('menu') }}'>Напитки</a>
+                  <a class="dropdown-item"  href='{{ url_for('menu') }}'>Десерты</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='{{ url_for('order') }}'>Сделать заказ</a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+      </div></secion> 
 
+<section class="menu">
+        <div class="container">
+          <div class="row">
+              <a name="first"></a>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/borch.jpg" alt="Card image cap">
+                 <div class="card-body">
+                   <p class="card-text">Борщ<br>200 &#8381</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/cream_soup.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Кремовый суп<br>185 &#8381</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/mashroom_soup.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Суп с грибами<br>160 &#8381</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#first"></a>
+          </div>
+          <div class="row">
+              <a name="second"></a>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/grechka.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Гречка<br>56 &#8381</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/goulash.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Гуляш<br>180 &#8381</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/pizza.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Пицца<br>666 &#8381</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#second"></a>
+          </div>
+          <div class="row">
+              <a name="third"></a>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/tee.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Чай<br>35 &#8381</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/wine.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Вино<br>800 &#8381</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/cappuccino.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Капучино<br>100 &#8381</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#third"></a>
+          </div>
+          <div class="row">
+              <a name="fourth"></a>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/cake.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Торт "Медовик"<br>60 &#8381</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/maffin.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Маффин<br>60 &#8381</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/img/menu/icecream.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Мороженое<br>120 &#8381</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#fourth"></a>
+          </div>
+        </div>
+      </section>
+      <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 offset-md-4">          
+                <div class="text_block">
+                    <a href="https://pixabay.com/">Служба поддержки</a> | <a href="https://convertio.co/ru/">Политика конфидециальности</a><br>
+                    <span>Позвоните нам 8-800-551-01-21</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

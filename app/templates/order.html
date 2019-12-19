@@ -3,31 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,70.." rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
     <title>Order</title>
   </head>
   <body>
       <div class="container nav">
           <div class="row">
             <div class="col">
-    
               <ul class="nav nav-tabs">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Veadlok</a>
+                  <a class="nav-link active" href='{{ url_for('index') }}'>Veadlok</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Меню</a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item"  href="http://menu.html/#anchor1">Горячие блюда</a>
-                    <a class="dropdown-item"  href="http://menu.html/#anchor2">Холодные бюлда</a>
-                    <a class="dropdown-item"  href="http://menu.html/#anchor3">Напитки</a>
-                    <a class="dropdown-item"  href="http://menu.html/#anchor4">Десерты</a>
+                      <a class="dropdown-item"  href="{{ url_for('menu') }}">Первые блюда</a>
+                      <a class="dropdown-item"  href="{{ url_for('menu') }}">Вторые бюлда</a>
+                      <a class="dropdown-item"  href="{{ url_for('menu') }}">Напитки</a>
+                      <a class="dropdown-item"  href="{{ url_for('menu') }}">Десерты</a>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="order.html">Сделать заказ</a>
+                  <a class="nav-link" href="{{ url_for('doorder') }}">Сделать заказ</a>
                 </li>
               </ul>
     
@@ -40,33 +39,33 @@
               <div class="row">
                 <div class="col col-md-3 offset-md-1">
                   <div class="card" style="width: 18rem;">
-                    <img src="../src/img/t1.jpg" class="card-img-top" alt="...">
+                    <img src="../static/img/t1.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Стол №1</h5>
                         <p class="card-text">Кол-во мест: 5</p>
-                        <a href=" {{ url_for('doorder') }} " class="btn btn-primary">Заказать</a>
+                        <a href="{{ url_for('doorder') }}" class="btn btn-primary">Заказать</a>
                       </div>
                   </div>
                 </div>
 
                 <div class="col col-md-3 offset-md-1">
                   <div class="card" style="width: 18rem;">
-                    <img src="../src/img/t2.jpg" class="card-img-top" alt="...">
+                    <img src="../static/img/t2.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Стол №2</h5>
                         <p class="card-text">Кол-во мест: 2</p>
-                        <a href=" {{ url_for('doorder') }} "class="btn btn-primary">Заказать</a>
+                        <a href="{{ url_for('doorder') }}" class="btn btn-primary">Заказать</a>
                       </div>
                   </div>
                 </div>
 
                 <div class="col col-md-3 offset-md-1">
                   <div class="card" style="width: 18rem;">
-                    <img src="../src/img/t3.jpg" class="card-img-top" alt="...">
+                    <img src="../static/img/t3.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Стол №3</h5>
                         <p class="card-text">Кол-во мест: 3</p>
-                        <a href=" {{ url_for('doorder') }} " class="btn btn-primary">Заказать</a>
+                        <a href="{{ url_for('doorder') }}" class="btn btn-primary">Заказать</a>
                       </div>
                   </div>
                 </div>
@@ -75,33 +74,33 @@
               <div class="row">
                 <div class="col col-md-3 offset-md-1">
                   <div class="card" style="width: 18rem;">
-                    <img src="../src/img/t4.jpg" class="card-img-top" alt="...">
+                    <img src="../static/img/t4.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Стол №4</h5>
                         <p class="card-text">Кол-во мест: 10</p>
-                        <a href=" {{ url_for('doorder') }} "class="btn btn-primary">Заказать</a>
+                        <a href="{{ url_for('doorder') }}" class="btn btn-primary">Заказать</a>
                       </div>
                   </div>
                 </div>
 
                 <div class="col col-md-3 offset-md-1">
                   <div class="card" style="width: 18rem;">
-                    <img src="../src/img/t5.jpg" class="card-img-top" alt="...">
+                    <img src="../static/img/t5.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Стол №5</h5>
                         <p class="card-text">Кол-во мест: 6</p>
-                        <a href=" {{ url_for('doorder') }} " class="btn btn-primary">Заказать</a>
+                        <a href="{{ url_for('doorder') }}" class="btn btn-primary">Заказать</a>
                       </div>
                   </div>
                 </div>
 
                 <div class="col col-md-3 offset-md-1">
                   <div class="card" style="width: 18rem;">
-                    <img src="../src/img/t6.jpg" class="card-img-top" alt="...">
+                    <img src="../static/img/t6.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Стол №6</h5>
                         <p class="card-text">Кол-во мест: 2</p>
-                        <a href=" {{ url_for('doorder') }} " class="btn btn-primary">Заказать</a>
+                        <a href="{{ url_for('doorder') }}" class="btn btn-primary">Заказать</a>
                       </div>
                   </div>
                 </div>
@@ -110,33 +109,33 @@
               <div class="row">
                 <div class="col col-md-3 offset-md-1">
                   <div class="card" style="width: 18rem;">
-                    <img src="../src/img/t7.jpg" class="card-img-top" alt="...">
+                    <img src="../static/img/t7.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Стол №7</h5>
                         <p class="card-text">Кол-во мест: 2</p>
-                        <a href=" {{ url_for('doorder') }} " class="btn btn-primary">Заказать</a>
+                        <a href="{{ url_for('doorder') }}" class="btn btn-primary">Заказать</a>
                       </div>
                   </div>
                 </div>
 
                 <div class="col col-md-3 offset-md-1">
                   <div class="card" style="width: 18rem;">
-                    <img src="../src/img/t8.jpg" class="card-img-top" alt="...">
+                    <img src="../static/img/t8.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Стол №8</h5>
                         <p class="card-text">Кол-во мест: 4</p>
-                        <a href=" {{ url_for('doorder') }} "class="btn btn-primary">Заказать</a>
+                        <a href="{{ url_for('doorder') }}" class="btn btn-primary">Заказать</a>
                       </div>
                   </div>
                 </div>
 
                 <div class="col col-md-3 offset-md-1">
                   <div class="card" style="width: 18rem;">
-                    <img src="../src/img/t9.jpg" class="card-img-top" alt="...">
+                    <img src="../static/img/t9.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Стол №9</h5>
                         <p class="card-text">Кол-во мест: 3</p>
-                        <a href=" {{ url_for('doorder') }} "class="btn btn-primary">Заказать</a>
+                        <a href="{{ url_for('doorder') }}" class="btn btn-primary">Заказать</a>
                       </div>
                   </div>
                 </div>
@@ -144,8 +143,18 @@
               </div>
             </div>
         </section>
-        
-   
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 offset-md-4">          
+                  <div class="text_block">
+                      <a href="https://pixabay.com/">Служба поддержки</a> | <a href="https://convertio.co/ru/">Политика конфидециальности</a><br>
+                      <span>Позвоните нам 8-800-551-01-21</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -3,34 +3,91 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,70.." rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 
 </head>
 <body>
- <div class="container">
-  <div class="row">
-   <div class="col-sm-4 offset-md-4">
-    <form action="" method="POST">
-    <legend>Название формы</legend>
-     <div class="form-group">
-      <label for="">Ваше имя</label>
-      <input type="text" class="form-control" id="" name="name" placeholder="Имя">
-     </div>
-     <div class="form-group">
-        <label for="">Ваша Фамилия</label>
-        <input type="text" class="form-control" id="" name="name" placeholder="Фамилия">
+        <div class="container nav">
+                <div class="row">
+                  <div class="col">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" href='{{ url_for('index') }}'>Veadlok</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href='{{ url_for('menu') }}' role="button" aria-haspopup="true" aria-expanded="false">Меню</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item"  href='{{ url_for('menu') }}'>Первые блюда</a>
+                            <a class="dropdown-item"  href='{{ url_for('menu') }}'>Вторые бюлда</a>
+                            <a class="dropdown-item"  href='{{ url_for('menu') }}'>Напитки</a>
+                            <a class="dropdown-item"  href='{{ url_for('menu') }}'>Десерты</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"   href='{{ url_for('order') }}'></a>
+                      </li>
+                    </ul>
+          
+                  </div>
+                </div>
+              </div>
+<div class="order_form">
+        <div class="container">
+                <div class="row">
+                 <div class="col-sm-4 offset-md-4">
+                  <form action="" method="POST">
+                  <legend>Заказ</legend>
+                   <div class="form-group">
+                    <label for="">Ваше имя</label>
+                    <input type="text" class="form-control" id="" name="name" placeholder="Имя">
+                   </div>
+                   <div class="form-group">
+                      <label for="">Ваша фамилия</label>
+                      <input type="text" class="form-control" id="" name="name" placeholder="Фамилия">
+                      </div>
+                   <div class="form-group">
+                    <label for="">Ваш номер телефона</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (999) 99 99 999">
+                   </div>
+                   <div class="form-group">
+                        <select class="custom-select">
+                        <option selected>Номер стола</option>
+                        <option value="1">№1</option>
+                        <option value="2">№2</option>
+                        <option value="3">№3</option>
+                        <option value="4">№4</option>
+                        <option value="5">№5</option>
+                        <option value="6">№6</option>
+                        <option value="7">№7</option>
+                        <option value="8">№8</option>
+                        <option value="9">№9</option>
+          </select>
+                    <div class="form-group">
+                        <label for="">Время</label>
+
+                        <input type="datetime-local" class="form-control" id="datetime" name="trip-start" value="2019-12-06"
+                        min="2019-06-12" max="2019-12-31" placeholder="00:00">
+                        </div>
+                  <button type="submit" class="btn btn-primary">Отправить</button>
+                  </form>
+                 </div>
+                </div>
+               </div>
+</div>
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">          
+          <div class="text_block">
+              <a href="https://pixabay.com/">Служба поддержки</a> | <a href="https://convertio.co/ru/">Политика конфидециальности</a><br>
+              <span>Позвоните нам 8-800-551-01-21</span>
+          </div>
         </div>
-     <div class="form-group">
-      <label for="">Ваш номер телефона</label>
-      <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (999) 99 99 999">
-     </div>
-    <button type="submit" class="btn btn-primary">Отправить</button>
-    </form>
-   </div>
-  </div>
- </div>
+      </div>
+    </div>
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 </body>
