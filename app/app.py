@@ -1,7 +1,6 @@
 import flask_sqlalchemy
-from flask import Flask, render_template
+from flask import Flask
 from config import Configuration
-from datetime import datetime
 from flask_bootstrap import Bootstrap
 from flask_migrate import Migrate,MigrateCommand
 from flask_script import Manager
